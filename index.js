@@ -34,7 +34,7 @@ var getPlatforms = function (projectName) {
     name : 'ios',
     // TODO: use async fs.exists
     isAdded : fs.existsSync('platforms/ios'),
-    splashPath : 'platforms/ios/' + projectName + xcodeFolder,
+    splashPath : 'resources/ios/icon',
     splash : [
       // iPhone
       { name: 'Default~iphone.png',            width: 320,  height: 480  },
@@ -53,22 +53,22 @@ var getPlatforms = function (projectName) {
   platforms.push({
     name : 'android',
     isAdded : fs.existsSync('platforms/android'),
-    splashPath : 'platforms/android/res/',
+    splashPath : 'resources/android/splash/',
     splash : [
       // Landscape
-      { name: 'drawable-land-ldpi/screen.png',  width: 320,  height: 200  },
-      { name: 'drawable-land-mdpi/screen.png',  width: 480,  height: 320  },
-      { name: 'drawable-land-hdpi/screen.png',  width: 800,  height: 480  },
-      { name: 'drawable-land-xhdpi/screen.png', width: 1280, height: 720  },
-      { name: 'drawable-land-xxhdpi/screen.png', width: 1600, height: 960  },
-      { name: 'drawable-land-xxxhdpi/screen.png', width: 1920, height: 1280  },
+      { name: 'drawable-land-ldpi-screen.png',  width: 320,  height: 200  },
+      { name: 'drawable-land-mdpi-screen.png',  width: 480,  height: 320  },
+      { name: 'drawable-land-hdpi-screen.png',  width: 800,  height: 480  },
+      { name: 'drawable-land-xhdpi-screen.png', width: 1280, height: 720  },
+      { name: 'drawable-land-xxhdpi-screen.png', width: 1600, height: 960  },
+      { name: 'drawable-land-xxxhdpi-screen.png', width: 1920, height: 1280  },
       // Portrait
-      { name: 'drawable-port-ldpi/screen.png',  width: 200,  height: 320  },
-      { name: 'drawable-port-mdpi/screen.png',  width: 320,  height: 480  },
-      { name: 'drawable-port-hdpi/screen.png',  width: 480,  height: 800  },
-      { name: 'drawable-port-xhdpi/screen.png', width: 720,  height: 1280 },
-      { name: 'drawable-port-xxhdpi/screen.png', width: 960, height: 1600  },
-      { name: 'drawable-port-xxxhdpi/screen.png', width: 1280, height: 1920  }
+      { name: 'drawable-port-ldpi-screen.png',  width: 200,  height: 320  },
+      { name: 'drawable-port-mdpi-screen.png',  width: 320,  height: 480  },
+      { name: 'drawable-port-hdpi-screen.png',  width: 480,  height: 800  },
+      { name: 'drawable-port-xhdpi-screen.png', width: 720,  height: 1280 },
+      { name: 'drawable-port-xxhdpi-screen.png', width: 960, height: 1600  },
+      { name: 'drawable-port-xxxhdpi-screen.png', width: 1280, height: 1920  }
     ]
   });
   platforms.push({
